@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <center>
+      <table border="1px solid black">
+        {{range .}}
+
+        <tr>
+          <td>
+
+              {{.ID}}
+          </td>
+          <td>
+              {{.TeamID}}
+          </td>
+              {{range .Gold}}
+              <td>
+                    {{.}}
+              </td>
+              {{end}}
+          
+        </tr>
+
+        {{end}}
+      </table>
+    </center>
+  </body>
+</html>
